@@ -1,0 +1,18 @@
+pipeline {
+    agent any  agent {label 'dc5-ansible01'}
+
+    stages {
+        stage("Build") {
+            steps {
+                echo "Some code compilation here..."
+            }
+        }
+
+        stage("Test") {
+            steps {
+                echo "Some tests execution here..."
+    
+            }
+        }
+    }
+}
