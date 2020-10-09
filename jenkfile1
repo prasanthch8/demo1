@@ -1,5 +1,5 @@
 pipeline {
-    agent any  agent {label 'dc5-ansible01'}
+    agent {label 'dc5-ansible01'}
 
     stages {
         stage("Build") {
