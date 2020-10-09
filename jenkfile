@@ -1,0 +1,9 @@
+node("dc5-ansible01") {
+    stage("Build") {
+        echo "Some code compilation here..."
+    }
+
+    stage("Test") {
+        echo "Some tests execution here..."
+    }
+}
